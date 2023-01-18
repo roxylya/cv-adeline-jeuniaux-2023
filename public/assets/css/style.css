@@ -1,12 +1,92 @@
 /* Mise en page de base */
-body{
+body {
     margin: 0;
-    font-family: cooper-black-std, serif;
-    font-family: copse, serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Della Respira', serif;
 }
 
-.header{
-    background-color:rgb(32, 80, 64);
+a {
+    text-decoration: none;
+    font-family: 'Della Respira';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #e5ceadd9;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px rgba(36, 15, 10, 0);
 }
+
+/* header */
+header {
+    height: 100vh;
+    background-image: url(/public/assets/img/HD-wallpaper-puzzle-design-wood.jpg);
+    background-size: 14%;
+
+}
+
+.navbar {
+    height: 15%;
+    background-color: #3F3432;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.374), 1px 1px 0px rgba(24, 20, 19, 0.082);
+}
+
+
+.navbar-nav {
+    margin-top: 0.2rem;
+    background: linear-gradient(#3F3432 24%, #894539 80%);
+    /* background-color: #894539;     */
+    border-radius: 8%;
+}
+
+
+.nav-link {
+    font-family: 'Della Respira';
+    font-size: 1.5rem;
+    /* color: #e5ceadd9;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px rgba(36, 15, 10, 0); */
+    padding: 0 1rem 0 1rem;
+    background-color: #3f3432f5;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(229, 206, 173), 0px 2px 3px #3f3432f5, 3px 1px 2px #3f3432f5;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    /* font-weight: lighter; */
+
+}
+
+.nav-link:active,
+.nav-link:focus {
+    font-size: 2rem;
+    /* color: #e5ceadd9;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px #240f0a00; */
+    transition: 0.3s;
+    transform: translateY(6px);
+}
+
+.nav-link:hover {
+    font-size: 2.5rem;
+    /* color: #e5ceadd9;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px rgba(36, 15, 10, 0); */
+    transition: 0.3s;
+}
+
+.titleContent {
+    background-color: #e5ceadd9;
+    margin: 3rem 0 3rem 0;
+    height: 70vh;
+}
+
+h1,
+h2 {
+    /* color: #CC9648;
+    text-shadow: 1px 1px #3F3432, -1px -1px #3F3432; */
+    background-color: #3f3432;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   
+
+}
+
+/* main */
