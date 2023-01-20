@@ -31,7 +31,7 @@ header {
 
 .navbar-nav {
     margin-top: 0.2rem;
-    background: linear-gradient(#3F3432 24%, #894539 80%);
+    background: linear-gradient(transparent, #3f3432da, #3f3432b5 , #3F3432);
     /* background-color: #894539;     */
     border-radius: 8%;
 }
@@ -43,9 +43,9 @@ header {
     /* color: #e5ceadd9;
     text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px rgba(36, 15, 10, 0); */
     padding: 0 1rem 0 1rem;
-    background-color: #3f3432f5;
+    background-color: #e5ceadd9;
     color: transparent;
-    text-shadow: 0px 2px 3px rgb(229, 206, 173), 0px 2px 3px #3f3432f5, 3px 1px 2px #3f3432f5;
+    text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3F3432, 3px 1px 2px #3F3432;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -56,16 +56,24 @@ header {
 .nav-link:active,
 .nav-link:focus {
     font-size: 2rem;
-    /* color: #e5ceadd9;
-    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px #240f0a00; */
+    background-color: #e5cead;
+    color: transparent;
+    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     transition: 0.3s;
     transform: translateY(6px);
 }
 
 .nav-link:hover {
     font-size: 2.5rem;
-    /* color: #e5ceadd9;
-    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px rgba(36, 15, 10, 0); */
+    background-color: #e5ceadd9;
+    color: transparent;
+    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     transition: 0.3s;
 }
 
@@ -75,18 +83,22 @@ header {
     height: 70vh;
 }
 
-h1,
-h2 {
-    /* color: #CC9648;
-    text-shadow: 1px 1px #3F3432, -1px -1px #3F3432; */
+h1{
     background-color: #3f3432;
     color: transparent;
     text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-   
+}
 
+h2 {
+    background-color: #3f3432;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 /* main */
