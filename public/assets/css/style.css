@@ -1,8 +1,29 @@
 /* Mise en page de base */
+
 body {
     margin: 0;
     font-family: 'Della Respira', serif;
 }
+
+
+/* scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0.8rem; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #3f3432; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(132, 65, 49, 0.8); /* color of the scroll thumb */
+    border-radius: 1rem; /* roundness of the scroll thumb */
+    border: 1px solid #3f3432; /* creates padding around scroll thumb */
+  }
+
+
+/* générale */
 
 h1 {
     background-color: #3f3432;
@@ -28,7 +49,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 2rem;
-    color: #e5ceadd9;
+    color: #e5cead7d;
     text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px rgba(36, 15, 10, 0);
 }
 
@@ -187,4 +208,19 @@ header {
 	}
 }
 
-/* main */
+/* profil */
+
+.contentSubtitle{
+    background-color: #3F3432;
+}
+
+.subtitle{
+    font-size: 2rem;
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    
+}
