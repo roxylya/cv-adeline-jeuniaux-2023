@@ -4,6 +4,24 @@ body {
     font-family: 'Della Respira', serif;
 }
 
+h1 {
+    background-color: #3f3432;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+h2 {
+    background-color: #3f3432;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
 a {
     text-decoration: none;
     font-family: 'Della Respira';
@@ -22,6 +40,8 @@ header {
 
 }
 
+/* navbar */
+
 .navbar {
     height: 15%;
     background-color: #3F3432;
@@ -31,7 +51,7 @@ header {
 
 .navbar-nav {
     margin-top: 0.2rem;
-    background: linear-gradient(transparent, #3f3432da, #3f3432b5 , #3F3432);
+    background: linear-gradient(transparent, #3f3432da, #3f3432b5, #3F3432);
     /* background-color: #894539;     */
     border-radius: 8%;
 }
@@ -43,7 +63,7 @@ header {
     /* color: #e5ceadd9;
     text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px rgba(36, 15, 10, 0); */
     padding: 0 1rem 0 1rem;
-    background-color: #e5ceadd9;
+    background-color: #c8944a;
     color: transparent;
     text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3F3432, 3px 1px 2px #3F3432;
     -webkit-background-clip: text;
@@ -56,7 +76,7 @@ header {
 .nav-link:active,
 .nav-link:focus {
     font-size: 2rem;
-    background-color: #e5cead;
+    background-color: #c8944a;
     color: transparent;
     text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
     -webkit-background-clip: text;
@@ -68,7 +88,7 @@ header {
 
 .nav-link:hover {
     font-size: 2.5rem;
-    background-color: #e5ceadd9;
+    background-color: #c6872f;
     color: transparent;
     text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
     -webkit-background-clip: text;
@@ -77,28 +97,71 @@ header {
     transition: 0.3s;
 }
 
+/* titre */
 .titleContent {
     background-color: #e5ceadd9;
     margin: 3rem 0 3rem 0;
     height: 70vh;
+    animation: titleContent 1.5s ease 0s 1 normal forwards;
 }
 
-h1{
+.name {
+    font-size: 7rem;
+}
+
+.job {
+    font-size: 4rem;
+}
+
+.junior{
+    font-size: 4rem;
     background-color: #3f3432;
     color: transparent;
-    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    text-shadow: 0px 2px 3px rgb(132, 65, 49, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
+    animation: junior 1.7s ease 0.5s 1 normal forwards;
 }
 
-h2 {
-    background-color: #3f3432;
-    color: transparent;
-    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+/* responsive */
+
+@media (max-width:850px) {
+    .name {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .job {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+
+/* animation */
+@keyframes titleContent {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes junior {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
 }
 
 /* main */
