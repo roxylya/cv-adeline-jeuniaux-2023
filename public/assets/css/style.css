@@ -174,7 +174,7 @@ p {
 }
 
 .vertical-line {
-    border-left: 2px solid rgb(132, 65, 49);
+    border-left: 2px solid #6c3e37;
     display: inline-block;
     height: 17rem;
     margin: 2rem;
@@ -182,7 +182,7 @@ p {
 
 .horizontal-line {
     width: 34rem;
-    border-bottom: 2px solid rgb(132, 65, 49);
+    border-bottom: 2px solid #6c3e37;
 }
 
 .contentProfil,
@@ -195,13 +195,13 @@ p {
 }
 
 .subtitle {
-    border-top: 1px solid rgb(132, 65, 49);
+    border-top: 1px solid #6c3e37;
     background-color: #3F3432;
 }
 
 .subtitleContact {
-    border-top: 1px solid rgb(132, 65, 49);
-    border-bottom: 1px solid rgb(132, 65, 49);
+    border-top: 1px solid #6c3e37;
+    border-bottom: 1px solid #6c3e37;
     background-color: #3F3432;
 }
 
@@ -241,15 +241,24 @@ li > p{
 h4{
     background-color: #c8944a;
     color: transparent;
-    text-shadow: 0px 3px 4px rgb(132, 65, 49), 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    text-shadow: 0px 3px 4px #6c3e37, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
 }
 
 .front, .back, .others, .qualities{
-    background-color: rgb(132, 65, 49);
+    background-color: #6c3e37;
     border-radius: 1.5rem;
+    border: 1px solid #c6872f;
+}
+
+.front, .back, .others{
+    animation: skills 1s ease 0s 1 normal forwards;
+}
+
+.qualities{
+    animation: qualities 1s ease 0s 1 normal forwards;
 }
 
 
@@ -351,6 +360,30 @@ footer>p {
 	}
 }
 
+@keyframes qualities {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes skills {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 /* responsive */
 
 @media (max-width:850px) {
@@ -370,7 +403,7 @@ footer>p {
 
     .horizontal-line {
         width: 4rem;
-        border-bottom: 2px solid rgb(132, 65, 49);
+        border-bottom: 2px solid #6c3e37;
     }
 }
 
@@ -378,6 +411,6 @@ footer>p {
     .horizontal-line {
         width: 5rem;
         height: 1px;
-        background-color: rgb(132, 65, 49);
+        background-color: #6c3e37;
     }
 }
