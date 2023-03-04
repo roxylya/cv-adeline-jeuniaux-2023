@@ -9,18 +9,23 @@ body {
 /* scrollbar */
 
 body::-webkit-scrollbar {
-    width: 0.8rem; /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: #3f3432; /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(132, 65, 49, 0.8); /* color of the scroll thumb */
-    border-radius: 1rem; /* roundness of the scroll thumb */
-    border: 1px solid #3f3432; /* creates padding around scroll thumb */
-  }
+    width: 0.8rem;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #3f3432;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(132, 65, 49, 0.8);
+    /* color of the scroll thumb */
+    border-radius: 1rem;
+    /* roundness of the scroll thumb */
+    border: 1px solid #3f3432;
+    /* creates padding around scroll thumb */
+}
 
 
 /* générale */
@@ -37,7 +42,7 @@ a {
 
 /* header */
 header {
-    height: 50vh;
+    height: 60vh;
     background-image: url(/public/assets/img/HD-wallpaper-puzzle-design-wood.jpg);
     background-size: 14%;
 
@@ -46,7 +51,7 @@ header {
 /* navbar */
 
 .navbar {
-    height: 15%;
+    height: 20%;
     background-color: #3F3432;
     box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.374), 1px 1px 0px rgba(24, 20, 19, 0.082);
 }
@@ -62,7 +67,7 @@ header {
 
 .nav-link {
     font-family: 'Della Respira';
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* color: #e5ceadd9;
     text-shadow: 3px 2px 3px rgba(255, 255, 255, .2), 1px 1px 0px rgba(36, 15, 10, 0); */
     padding: 0 1rem 0 1rem;
@@ -78,7 +83,7 @@ header {
 
 .nav-link:active,
 .nav-link:focus {
-    font-size: 2rem;
+    font-size: 2.5rem;
     background-color: #c8944a;
     color: transparent;
     text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
@@ -101,10 +106,11 @@ header {
 }
 
 /* titre */
+
 .titleContent {
     background-color: #e5ceadd9;
     margin: 2rem 0 2rem 0;
-    height: 70%;
+    height: 65%;
     animation: titleContent 1.2s ease 0s 1 normal forwards;
 }
 
@@ -128,7 +134,7 @@ header {
     background-clip: text;
 }
 
-.junior{
+.junior {
     font-size: 3rem;
     background-color: #3f3432;
     color: transparent;
@@ -137,8 +143,137 @@ header {
     -moz-background-clip: text;
     background-clip: text;
     animation: junior 1.5s linear 1s 1 normal forwards;
-    animation-iteration-count: 1 ;
+    animation-iteration-count: 1;
 }
+
+/* profil */
+
+h3 {
+    font-size: 2rem;
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.profil,
+.skills,
+.way,
+.hobbies,
+.contact,
+.portfolio {
+    background-color: #E5CEAD;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.3rem;
+    color: #3F3432;
+}
+
+.vertical-line {
+    border-left: 2px solid rgb(132, 65, 49);
+    display: inline-block;
+    height: 17rem;
+    margin: 2rem;
+}
+
+.horizontal-line {
+    width: 34rem;
+    border-bottom: 2px solid rgb(132, 65, 49);
+}
+
+.contentProfil,
+.contentSkills,
+.contentWay,
+.contentHobbies,
+.contentContact,
+.contentPortfolio {
+    display: none;
+}
+
+.subtitle {
+    border-top: 1px solid rgb(132, 65, 49);
+    background-color: #3F3432;
+}
+
+.subtitleContact {
+    border-top: 1px solid rgb(132, 65, 49);
+    border-bottom: 1px solid rgb(132, 65, 49);
+    background-color: #3F3432;
+}
+
+
+/* Skills */
+
+li{
+    list-style: none;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #e5ceadd9;
+}
+
+footer>p {
+    font-size: 1rem;
+    background-color: #3f3432;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(132, 65, 49, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+
+
+/* animation */
+@keyframes titleContent {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes junior {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
 
 /* responsive */
 
@@ -153,104 +288,20 @@ header {
         text-align: center;
     }
 
-    .junior{
+    .junior {
         font-size: 1.5rem;
     }
 
-    .horizontal-line{
+    .horizontal-line {
         width: 4rem;
         border-bottom: 2px solid rgb(132, 65, 49);
-      }
+    }
 }
 
-
-
-
-/* animation */
-@keyframes titleContent {
-	0% {
-		opacity: 0;
-		transform: translateX(-250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-@keyframes junior {
-	0% {
-		transform: scale3d(1, 1, 1);
-	}
-
-	30% {
-		transform: scale3d(1.25, 0.75, 1);
-	}
-
-	40% {
-		transform: scale3d(0.75, 1.25, 1);
-	}
-
-	50% {
-		transform: scale3d(1.15, 0.85, 1);
-	}
-
-	65% {
-		transform: scale3d(0.95, 1.05, 1);
-	}
-
-	75% {
-		transform: scale3d(1.05, 0.95, 1);
-	}
-
-	100% {
-		transform: scale3d(1, 1, 1);
-	}
-}
-
-/* profil */
-
-.subtitle{
-    background-color: #3F3432;
-}
-
-h3{
-    font-size: 2rem;
-    background-color: #c8944a;
-    color: transparent;
-    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-}
-
-.profil{
-    background-color: #E5CEAD;
-}
-
-p{
-    text-align: justify;
-    font-size: 1.3rem;
-    color: #3F3432;
-}
-
-.vertical-line{
-    border-left: 2px solid rgb(132, 65, 49);
-    display: inline-block;
-    height: 17rem;
-    margin: 2rem;
-  }
-
-.horizontal-line{
-    width: 34rem;
-    border-bottom: 2px solid rgb(132, 65, 49);
-  }
-
-  @media (max-width:600px) {
-    .horizontal-line{
+@media (max-width:600px) {
+    .horizontal-line {
         width: 5rem;
         height: 1px;
         background-color: rgb(132, 65, 49);
-      }
+    }
 }
