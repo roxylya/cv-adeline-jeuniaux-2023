@@ -25,24 +25,6 @@ body::-webkit-scrollbar {
 
 /* générale */
 
-h1 {
-    background-color: #3f3432;
-    color: transparent;
-    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-}
-
-h2 {
-    background-color: #3f3432;
-    color: transparent;
-    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-}
-
 a {
     text-decoration: none;
     font-family: 'Della Respira';
@@ -55,7 +37,7 @@ a {
 
 /* header */
 header {
-    height: 100vh;
+    height: 50vh;
     background-image: url(/public/assets/img/HD-wallpaper-puzzle-design-wood.jpg);
     background-size: 14%;
 
@@ -121,28 +103,40 @@ header {
 /* titre */
 .titleContent {
     background-color: #e5ceadd9;
-    margin: 3rem 0 3rem 0;
-    height: 70vh;
+    margin: 2rem 0 2rem 0;
+    height: 70%;
     animation: titleContent 1.2s ease 0s 1 normal forwards;
 }
 
 .name {
-    font-size: 7rem;
+    font-size: 5rem;
+    background-color: #3f3432;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 .job {
-    font-size: 4rem;
+    font-size: 3rem;
+    background-color: #3f3432;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgb(203, 149, 72, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 .junior{
-    font-size: 4rem;
+    font-size: 3rem;
     background-color: #3f3432;
     color: transparent;
     text-shadow: 0px 2px 3px rgb(132, 65, 49, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    animation: junior 1.5s linear 0s 1 normal forwards;
+    animation: junior 1.5s linear 1s 1 normal forwards;
     animation-iteration-count: 1 ;
 }
 
@@ -150,19 +144,26 @@ header {
 
 @media (max-width:850px) {
     .name {
-        font-size: 4rem;
+        font-size: 2.5rem;
         text-align: center;
     }
 
     .job {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
     .junior{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+
+    .horizontal-line{
+        width: 4rem;
+        border-bottom: 2px solid rgb(132, 65, 49);
+      }
 }
+
+
 
 
 /* animation */
@@ -210,11 +211,11 @@ header {
 
 /* profil */
 
-.contentSubtitle{
+.subtitle{
     background-color: #3F3432;
 }
 
-.subtitle{
+h3{
     font-size: 2rem;
     background-color: #c8944a;
     color: transparent;
@@ -222,5 +223,34 @@ header {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    
+}
+
+.profil{
+    background-color: #E5CEAD;
+}
+
+p{
+    text-align: justify;
+    font-size: 1.3rem;
+    color: #3F3432;
+}
+
+.vertical-line{
+    border-left: 2px solid rgb(132, 65, 49);
+    display: inline-block;
+    height: 17rem;
+    margin: 2rem;
+  }
+
+.horizontal-line{
+    width: 34rem;
+    border-bottom: 2px solid rgb(132, 65, 49);
+  }
+
+  @media (max-width:600px) {
+    .horizontal-line{
+        width: 5rem;
+        height: 1px;
+        background-color: rgb(132, 65, 49);
+      }
 }
