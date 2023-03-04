@@ -143,7 +143,7 @@ header {
     -moz-background-clip: text;
     background-clip: text;
     animation: junior 1.5s linear 1s 1 normal forwards;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
 }
 
 /* profil */
@@ -205,11 +205,51 @@ p {
     background-color: #3F3432;
 }
 
+.profilText1{
+    animation: profilText1 1s ease 0s 1 normal forwards;
+}
+
+.profilText2{
+    animation: profilText2 1s ease 0s 1 normal forwards;
+}
+
+.profilText3{
+    animation: profilText3 1s ease 0s 1 normal forwards;
+}
+
+
 
 /* Skills */
 
 li{
-    list-style: none;
+    list-style: none outside;
+}
+
+li > p{
+    font-size: 1rem;
+    padding-right: 2rem;
+    color: #E5CEAD;
+}
+
+.hrSkills{
+    width: 75%;
+    padding-left: 2px;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #533c1c;
+}
+
+h4{
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 3px 4px rgb(132, 65, 49), 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.front, .back, .others, .qualities{
+    background-color: rgb(132, 65, 49);
+    border-radius: 1.5rem;
 }
 
 
@@ -274,6 +314,42 @@ footer>p {
     }
 }
 
+
+@keyframes profilText1 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes profilText2 {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes profilText3 {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 /* responsive */
 
