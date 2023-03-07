@@ -104,7 +104,7 @@ a {
 .titleContent {
   background-color: #e5ceadd9;
   margin: 2rem 0 2rem 0;
-  padding : 1rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   animation: titleContent 1.2s ease 0s 1 normal forwards;
 }
 
@@ -245,16 +245,31 @@ h4 {
   background-color: #6c3e37;
   border-radius: 1.5rem;
   border: 1px solid #c6872f;
+
 }
+.front{
+  animation: skills 1s ease 0s 1 normal forwards; 
+}
+
+.back{
+  animation: skills 1s ease 0.2s 1 normal forwards; 
+}
+
+.others {
+  animation: skills 1s ease 0.4s 1 normal forwards; 
+}
+
 
 .front,
 .back,
 .others {
-  animation: skills 1s ease 0s 1 normal forwards;
+  width: 100%;
 }
 
 .qualities {
   animation: qualities 1s ease 0s 1 normal forwards;
+ 
+
 }
 
 
@@ -270,14 +285,14 @@ h4 {
 /* footer */
 
 footer {
-  background-color: #e5ceadd9;
+  background-color: #6d3f38;
 }
 
 footer>p {
-  font-size: 1rem;
-  background-color: #3f3432;
+  font-size: 1.3rem;
+  background-color: #c8944a;
   color: transparent;
-  text-shadow: 0px 2px 3px rgb(132, 65, 49, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+  text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3F3432, 3px 1px 2px #3F3432;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -406,5 +421,30 @@ footer>p {
     width: 5rem;
     height: 1px;
     background-color: #6c3e37;
+  }
+}
+
+
+@media (min-width:992px) {
+
+  .profilText2,
+  .profilText1 {
+    width: 48%;
+  }
+
+  .tools {
+    width: 50%;
+  }
+}
+
+
+@media (min-width:1230px) {
+.front,
+  .back,
+  .others {
+    background-color: #6c3e37;
+    border-radius: 1.5rem;
+    border: 1px solid #c6872f;
+    width: 80%;
   }
 }
