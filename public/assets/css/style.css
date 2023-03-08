@@ -108,7 +108,7 @@ a {
   animation: titleContent 1.2s ease 0s 1 normal forwards;
 }
 
-.name {
+h1 {
   font-size: 5rem;
   background-color: #3f3432;
   color: transparent;
@@ -118,7 +118,7 @@ a {
   background-clip: text;
 }
 
-.job {
+h2 {
   font-size: 3rem;
   background-color: #3f3432;
   color: transparent;
@@ -177,17 +177,6 @@ p {
 .horizontal-line {
   width: 34rem;
   border-bottom: 2px solid #6c3e37;
-}
-
-/* si j'active le toggle */
-
-.contentProfil,
-.contentSkills,
-.contentWay,
-.contentHobbies,
-.contentContact,
-.contentPortfolio {
-  display: none;
 }
 
 .subtitle {
@@ -252,11 +241,11 @@ h4 {
 }
 
 .back{
-  animation: skills 1s ease 0.2s 1 normal forwards; 
+  animation: skills 1.5s ease 0s 1 normal forwards; 
 }
 
 .others {
-  animation: skills 1s ease 0.4s 1 normal forwards; 
+  animation: skills 2s ease 0s 1 normal forwards; 
 }
 
 
@@ -267,20 +256,12 @@ h4 {
 }
 
 .qualities {
-  animation: qualities 1s ease 0s 1 normal forwards;
+  animation: qualities 1.5s ease 0s 1 normal forwards;
  
 
 }
 
 
-/* way */
-
-/* .arrow {
-    border-left: 2px solid #6c3e37;
-    display: inline-block;
-    height: 30rem;
-    margin: 2rem;
-} */
 
 /* footer */
 
@@ -301,6 +282,18 @@ footer>p {
 
 
 /* animation */
+
+/* si j'active le toggle */
+
+/* .contentProfil,
+.contentSkills,
+.contentWay,
+.contentHobbies,
+.contentContact,
+.contentPortfolio {
+  display: none;
+} */
+
 @keyframes titleContent {
   0% {
     opacity: 0;
@@ -343,7 +336,6 @@ footer>p {
   }
 }
 
-
 @keyframes profilText1 {
   0% {
     opacity: 0;
@@ -367,7 +359,6 @@ footer>p {
     transform: translateX(0);
   }
 }
-
 
 @keyframes qualities {
   0% {
@@ -393,15 +384,25 @@ footer>p {
   }
 }
 
+
+
 /* responsive */
 
+@media (max-width:600px) {
+  .horizontal-line {
+    width: 5rem;
+    height: 1px;
+    background-color: #6c3e37;
+  }
+}
+
 @media (max-width:850px) {
-  .name {
+  h1 {
     font-size: 2.5rem;
     text-align: center;
   }
 
-  .job {
+  h2 {
     font-size: 1.5rem;
     text-align: center;
   }
@@ -413,14 +414,6 @@ footer>p {
   .horizontal-line {
     width: 4rem;
     border-bottom: 2px solid #6c3e37;
-  }
-}
-
-@media (max-width:600px) {
-  .horizontal-line {
-    width: 5rem;
-    height: 1px;
-    background-color: #6c3e37;
   }
 }
 
@@ -438,7 +431,7 @@ footer>p {
 }
 
 
-@media (min-width:1230px) {
+@media (min-width:1250px) {
 .front,
   .back,
   .others {
@@ -446,5 +439,13 @@ footer>p {
     border-radius: 1.5rem;
     border: 1px solid #c6872f;
     width: 80%;
+  }
+
+  .name {
+    width: 60%;
+  }
+
+  .job{
+    width: 50%;
   }
 }
