@@ -117,3 +117,56 @@
 //     contact.style.display = "block";
 //   }
 // })
+
+const others = document.querySelector('.others');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    // console.log(scrollTop, clientHeight);
+
+    const topElementToTopViewport = others.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 2){
+        others.classList.add('active')
+    }
+})
+
+
+const back = document.querySelector('.back');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    // console.log(scrollTop, clientHeight);
+
+    const topElementToTopViewport = back.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 1.8){
+        back.classList.add('active')
+    }
+})
+
+
+const front = document.querySelector('.front');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    // console.log(scrollTop, clientHeight);
+
+    const topElementToTopViewport = front.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 1.6){
+        front.classList.add('active')
+    }
+})

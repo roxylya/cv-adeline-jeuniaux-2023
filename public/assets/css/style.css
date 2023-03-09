@@ -51,6 +51,8 @@ a {
 .navbar {
   background-color: #3F3432;
   box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.374), 1px 1px 0px rgba(24, 20, 19, 0.082);
+  /* --bs-navbar-hover-color: rgba(0, 0, 0, 0);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0); */
 }
 
 .container-fluid {
@@ -61,7 +63,6 @@ a {
   margin-top: 0.2rem;
   background-color: #3F3432;
 }
-
 
 .nav-link {
   font-family: 'Della Respira';
@@ -91,7 +92,7 @@ a {
 .nav-link:hover {
   font-size: 2rem;
   background-color: #c6872f;
-  /* color: transparent; */
+  color: transparent;
   text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -163,7 +164,7 @@ h3 {
 
 p {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #3F3432;
 }
 
@@ -190,14 +191,9 @@ p {
   background-color: #3F3432;
 }
 
-.profilText1 {
-  animation: profilText1 1s ease 0s 1 normal forwards;
+.profilText {
+  animation: profilText 1s ease 0s 1 normal forwards;
 }
-
-.profilText2 {
-  animation: profilText2 1s ease 0s 1 normal forwards;
-}
-
 
 /* Skills */
 
@@ -206,7 +202,6 @@ li {
 }
 
 li>p {
-  font-size: 1rem;
   padding-right: 2rem;
   color: #E5CEAD;
 }
@@ -229,37 +224,12 @@ h4 {
 
 .front,
 .back,
-.others,
-.qualities {
+.others {
   background-color: #6c3e37;
   border-radius: 1.5rem;
   border: 1px solid #c6872f;
-
-}
-.front{
-  animation: skills 1s ease 0s 1 normal forwards; 
 }
 
-.back{
-  animation: skills 1.5s ease 0s 1 normal forwards; 
-}
-
-.others {
-  animation: skills 2s ease 0s 1 normal forwards; 
-}
-
-
-.front,
-.back,
-.others {
-  width: 100%;
-}
-
-.qualities {
-  animation: qualities 1.5s ease 0s 1 normal forwards;
- 
-
-}
 
 
 
@@ -282,6 +252,8 @@ footer>p {
 
 
 /* animation */
+
+
 
 /* si j'active le toggle */
 
@@ -336,7 +308,7 @@ footer>p {
   }
 }
 
-@keyframes profilText1 {
+@keyframes profilText {
   0% {
     opacity: 0;
     transform: translateX(-250px);
@@ -348,42 +320,49 @@ footer>p {
   }
 }
 
-@keyframes profilText2 {
-  0% {
-    opacity: 0;
-    transform: translateX(250px);
-  }
+/* skills */
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.front {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease-in-out,
+    opacity 0.6s ease-in-out;
 }
 
-@keyframes qualities {
-  0% {
-    opacity: 0;
-    transform: translateX(250px);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+
+.front.active {
+  transform: translateX(0%);
+  transition: transform 1s ease;
+  opacity: 1;
 }
 
-@keyframes skills {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.back {
+  transform: translateX(+100%);
+  opacity: 0;
+  transition: transform 1s ease-in-out,
+    opacity 0.6s ease-in-out;
 }
 
+.back.active {
+  transform: translateX(0%);
+  transition: transform 1s ease;
+  opacity: 1;
+}
+
+.others {
+  transform: translateY(+100%);
+  opacity: 0;
+  transition: transform 1s ease-in-out,
+    opacity 0.6s ease-in-out;
+}
+
+.others.active {
+  transform: translateY(0%);
+  transition: transform 1s ease;
+  opacity: 1;
+}
 
 
 /* responsive */
@@ -398,17 +377,17 @@ footer>p {
 
 @media (max-width:850px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   .junior {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .horizontal-line {
@@ -418,34 +397,12 @@ footer>p {
 }
 
 
-@media (min-width:992px) {
-
-  .profilText2,
-  .profilText1 {
-    width: 48%;
-  }
-
-  .tools {
-    width: 50%;
-  }
-}
-
-
 @media (min-width:1250px) {
-.front,
-  .back,
-  .others {
-    background-color: #6c3e37;
-    border-radius: 1.5rem;
-    border: 1px solid #c6872f;
-    width: 80%;
-  }
-
   .name {
     width: 60%;
   }
 
-  .job{
+  .job {
     width: 50%;
   }
 }
