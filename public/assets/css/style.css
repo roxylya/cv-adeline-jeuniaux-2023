@@ -340,12 +340,17 @@ h5 {
   background-clip: text;
 }
 
+.contentArrowLeft,
+.contentArowRight {
+  margin: 0;
+  padding: 0;
+}
+
 .contentLeft {
   background-color: #3F3432;
   padding: 1rem;
   border-radius: 1rem;
-  width: 25rem;
-  margin: 0.5rem;
+  width: 40rem;
   border: 1px solid #c6872f;
 }
 
@@ -363,8 +368,7 @@ h5 {
   padding: 1rem;
   border-radius: 1rem;
   border: 1px solid #c6872f;
-  width: 25rem;
-  margin: 0.5rem;
+  width: 40rem;
 }
 
 .arrow-right {
@@ -373,10 +377,10 @@ h5 {
   border-top: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
   border-left: 4rem solid #3F3432;
-  }
+}
 
 .line {
-  height: 40rem;
+  height: 35rem;
   width: 0.5rem;
   background-color: #6d3f38;
 }
@@ -389,6 +393,18 @@ h5 {
   border-bottom: 1.5rem solid #6d3f38;
 }
 
+.stageMars2023 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.coriolis2022 {
+  margin-bottom: 1rem;
+}
+
+.laManu {
+  margin-top: 3rem;
+}
 
 
 /* footer */
@@ -518,6 +534,70 @@ footer>p {
     height: 1px;
     background-color: #6c3e37;
   }
+
+  /* timeline */
+
+  .contentWay {
+    --bs-gutter-x: 0rem;
+    margin: 0;
+  }
+
+  .contentLeft {
+    background-color: #3F3432;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 18rem;
+    border: 1px solid #c6872f;
+  }
+
+  .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    border-right: 1rem solid #3F3432;
+  }
+
+
+  .contentRight {
+    background-color: #3F3432;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #c6872f;
+    width: 18rem;
+  }
+
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    border-left: 1rem solid #3F3432;
+  }
+
+  .line {
+    height: 73rem;
+    width: 0.5rem;
+    background-color: #6d3f38;
+  }
+
+  .stageMars2023 {
+    margin: 0;
+  }
+
+  .coriolis2022 {
+    margin: 0;
+  }
+
+  .laManu {
+    margin: 0;
+  }
+
+  .contentArrowRight {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
 }
 
 @media (max-width:850px) {
@@ -539,6 +619,71 @@ footer>p {
     width: 4rem;
     border-bottom: 2px solid #6c3e37;
   }
+
+    /* timeline */
+
+    .contentWay {
+      --bs-gutter-x: 0rem;
+      margin: 0;
+    }
+  
+    .contentLeft {
+      background-color: #3F3432;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 20rem;
+      border: 1px solid #c6872f;
+    }
+  
+    .arrow-left {
+      width: 0;
+      height: 0;
+      border-top: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid transparent;
+      border-right: 1rem solid #3F3432;
+    }
+  
+  
+    .contentRight {
+      background-color: #3F3432;
+      padding: 1rem;
+      border-radius: 1rem;
+      border: 1px solid #c6872f;
+      width: 20rem;
+    }
+  
+    .arrow-right {
+      width: 0;
+      height: 0;
+      border-top: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid transparent;
+      border-left: 1rem solid #3F3432;
+    }
+  
+    .line {
+      height: 55rem;
+      width: 0.5rem;
+      background-color: #6d3f38;
+    }
+  
+    .stageMars2023 {
+
+      margin-bottom: 2rem;
+    }
+  
+    .coriolis2022 {
+      margin-bottom: 1rem;
+    }
+  
+    .laManu {
+      margin-top: 2rem;
+    }
+  
+    /* .contentArrowRight {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    } */
+  
 }
 
 
