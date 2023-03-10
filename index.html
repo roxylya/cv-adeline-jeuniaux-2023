@@ -74,7 +74,7 @@
   </header>
   <!-- header end -->
   <!-- main start -->
-  <main class="d-flex flex-column">
+  <main class="d-flex flex-column bg">
     <!-- profil start -->
     <div class="profil m-0 p-0" id="profil">
       <div class="subtitle m-0 py-2 ps-5">
@@ -103,9 +103,10 @@
       <div class="subtitle m-0 py-2 ps-5">
         <h3>Compétences</h3>
       </div>
-      <div class="contentSkills d-flex align-content-around flex-column align-content-center justify-content-around px-md-5 p-4">
+      <div
+        class="container-fluid contentSkills d-flex align-content-around flex-column align-content-center justify-content-around px-md-5 p-4">
         <div class="d-flex flex-md-row flex-column justify-content-around mb-3">
-          <div class="col-5 front p-2 mb-3 mb-md-0 ">
+          <div class="col-md-5 front p-2 mb-3 mb-md-0 ">
             <div class="subSubtitle d-flex">
               <h4 class="ps-3 pt-1">Front</h4>
               <div class="hrSkills"></div>
@@ -121,13 +122,14 @@
                 <p>Framework : Bootstrap</p>
               </li>
             </ul>
+            <img class="iconeSkills" src="/public/assets/img/puzzle3.png" alt="icone-front-end">
           </div>
-          <div class="col-5  back p-2 mb-3 mb-md-0">
-            <div class="subSubtitle d-flex">
-              <h4 class="ps-3 pt-1">Back</h4>
+          <div class="col-md-5 back p-2 mb-3 mb-md-0">
+            <div class="subSubtitle d-flex flex-row-reverse">
+              <h4 class="pe-4 pt-1">Back</h4>
               <div class="hrSkills"></div>
             </div>
-            <ul class="pt-2">
+            <ul class="pt-2 d-flex flex-column align-items-end pe-3">
               <li>
                 <p>Langages : php, SQL</p>
               </li>
@@ -138,10 +140,11 @@
                 <p>Outils : phpMyAdmin, Looping</p>
               </li>
             </ul>
+            <img class="iconeSkillsB " src="/public/assets/img/puzzle1.png" alt="icone-back-end">
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-          <div class="col-5 others p-2">
+          <div class="col-md-5 others p-2">
             <div class="subSubtitle d-flex">
               <h4 class="ps-3 pt-2">Outils</h4>
               <div class="hrSkills"></div>
@@ -160,37 +163,9 @@
                 <p>Autres : Trello, Github, Carte Mentale</p>
               </li>
             </ul>
+            <img class="iconeSkills" src="/public/assets/img/puzzle2.png" alt="icone-tools-end">
           </div>
         </div>
-        <!-- <div class="qualities m-md-auto mt-3 p-2">
-            <div class="subSubtitle d-flex">
-              <h4 class="ps-3 pt-2 pb-0">Qualités</h4>
-              <div class="hrSkills"></div>
-            </div>
-            <ul class="pt-2">
-              <li>
-                <p>Curiosité : <br>
-                  J’ai soif d’apprendre et de découvrir de nouvelles choses.</p>
-              </li>
-              <li>
-                <p>Écoute : <br>
-                  J’ai développé cette qualité durant mes diverses activités.</p>
-              </li>
-              <li>
-                <p> Esprit d’équipe : <br>
-                  J’apprécie autant de travailler seule qu’en équipe.</br>
-                  L’entraide est une valeur que j’apprécie dans cette activité.</p>
-              </li>
-              <li>
-                <p>Organisation : <br>
-                  J’aime être méthodique dans tout ce que j’entreprends.</p>
-              </li>
-              <li>
-                <p>Persévérance : <br>
-                  Je n’abandonne pas facilement.</p>
-              </li>
-            </ul>
-          </div> -->
       </div>
     </div>
     <!-- skills end -->
@@ -200,7 +175,32 @@
         <h3>Parcours</h3>
       </div>
       <div class="contentWay py-4">
-
+        <div class="timeline">
+          <div class="container right">
+            <div class="content">
+              <h4>Mars 2023</h4>
+              <p class="timelineText"></p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h4>Octobre 2022 / Avril 2023</h4>
+              <p class="timelinetext"></p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h4>Octobre 2020 / Février 2022</h4>
+              <p class="timelinetext">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h4>Octobre 2019 / Juillet 2020</h4>
+              <p class="timelinetext">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- way end -->
