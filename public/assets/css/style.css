@@ -65,13 +65,17 @@ a {
 .navbar {
   background-color: #3F3432;
   box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.374), 1px 1px 0px rgba(24, 20, 19, 0.082);
-  position: sticky; /* Make it stick/fixed */
+  position: sticky;
+  /* Make it stick/fixed */
   z-index: 3;
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  top: 0;
+  /* Stay on top */
+  width: 100%;
+  /* Full width */
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
   /* --bs-navbar-hover-color: rgba(0, 0, 0, 0);
-  --bs-navbar-active-color: rgba(0, 0, 0, 0); */
+        --bs-navbar-active-color: rgba(0, 0, 0, 0); */
 }
 
 .container-fluid {
@@ -442,7 +446,8 @@ h5 {
   margin: 0;
   background-color: #e5ceadef;
   margin: 2rem 0 2rem 0;
-  padding: 1rem 0 1rem 0;}
+  padding: 1rem 0 1rem 0;
+}
 
 .hobby {
   width: 18rem;
@@ -528,9 +533,34 @@ h5 {
 
 
 
+/* Portfolio */
+.carousel-item>img {
+  width: 30rem;
+  height: 20rem;
+  object-fit: fill;
+}
 
+.carousel-inner{
+  display: flex;
+  justify-content: center;
+}
 
+.carousel-indicators{
+  margin: -2rem;
+}
 
+.carousel-indicators [data-bs-target]{
+  background-color: #6c3e37;
+  
+}
+
+.carousel-control-prev-icon {
+  background-image: url("/public/assets/img/icons8-back-50.png");
+}
+
+.carousel-control-next-icon {
+  background-image: url("/public/assets/img/icons8-next-50.png");
+}
 
 /* footer */
 
@@ -832,9 +862,9 @@ footer>p {
   }
 
   /* .contentArrowRight {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-    } */
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                  } */
 
 }
 
