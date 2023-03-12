@@ -3,6 +3,19 @@
 body {
   margin: 0;
   font-family: 'Della Respira', serif;
+  background-color: #E5CEAD;
+}
+
+.up {
+  padding: 0.5rem 1rem 1rem 1rem;
+  border-radius: 50%;
+  border: 1px solid #c8944a;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  /* margin: 0.5rem; */
+  margin-left: 50%;
 }
 
 /* scrollbar */
@@ -563,6 +576,7 @@ h5 {
 
 footer {
   background-color: #844231;
+  margin-top: 1rem;
 }
 
 footer>p {
@@ -703,7 +717,23 @@ footer>p {
 
 /* responsive */
 
+
+
 @media (max-width:600px) {
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .junior {
+    font-size: 2rem;
+  }
   .horizontal-line {
     width: 5rem;
     height: 1px;
@@ -783,6 +813,7 @@ footer>p {
     height: 20rem;
     object-fit: fill;
   }
+
   .carousel-control-next {
     margin-right: -1.5rem;
   }
@@ -942,7 +973,20 @@ footer>p {
     background-clip: text;
     transition: 0.3s;
   }
+}
 
+@media (max-width:900px) {
+  .up {
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 50%;
+    border: 1px solid #c8944a;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    /* margin: 0.5rem; */
+    margin-left: 75%;
+  }
 }
 
 @media (min-width:850px) {
@@ -1051,5 +1095,17 @@ footer>p {
     margin-left: -2.5rem;
   }
 
+  .up {
+    
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-radius: 50%;
+    border: 1px solid #c8944a;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    /* margin: 0.5rem; */
+    margin-left: 93%;
+  }
 
 }
