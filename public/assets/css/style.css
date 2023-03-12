@@ -65,6 +65,11 @@ a {
 .navbar {
   background-color: #3F3432;
   box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.374), 1px 1px 0px rgba(24, 20, 19, 0.082);
+  position: sticky; /* Make it stick/fixed */
+  z-index: 3;
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
   /* --bs-navbar-hover-color: rgba(0, 0, 0, 0);
   --bs-navbar-active-color: rgba(0, 0, 0, 0); */
 }
@@ -246,7 +251,7 @@ h3 {
 /* Skills */
 
 .contentSkills {
-  background-color: #e5ceadd9;
+  background-color: #e5ceadef;
   margin: 2rem 0 2rem 0;
   padding: 1rem 0 1rem 0;
 }
@@ -435,7 +440,9 @@ h5 {
 /* hobbies */
 .contentHobbies {
   margin: 0;
-}
+  background-color: #e5ceadef;
+  margin: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;}
 
 .hobby {
   width: 18rem;
