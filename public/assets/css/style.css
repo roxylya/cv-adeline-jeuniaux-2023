@@ -1,13 +1,9 @@
-/* Mise en page de base */
+/* générale */
 
 body {
   margin: 0;
   font-family: 'Della Respira', serif;
 }
-
-
-
-
 
 /* scrollbar */
 
@@ -22,19 +18,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(132, 65, 49, 0.8);
+  background-color: #844231;
   /* color of the scroll thumb */
   border-radius: 1rem;
   /* roundness of the scroll thumb */
   border: 1px solid #3f3432;
   /* creates padding around scroll thumb */
 }
-
-
-
-
-
-/* générale */
 
 a {
   text-decoration: none;
@@ -47,17 +37,11 @@ a {
 }
 
 
-
-
 /* header */
 .bg {
   background-image: url(/public/assets/img/HD-wallpaper-puzzle-design-wood.jpg);
   background-size: 12%;
 }
-
-
-
-
 
 
 /* navbar */
@@ -124,9 +108,6 @@ a {
 }
 
 
-
-
-
 /* titre */
 
 .titleContent {
@@ -160,15 +141,13 @@ h2 {
   font-size: 3rem;
   background-color: #3f3432;
   color: transparent;
-  text-shadow: 0px 2px 3px rgb(132, 65, 49, 0.8), 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+  text-shadow: 0px 2px 3px #844231, 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   animation: junior 1.5s linear 1s 1 normal forwards;
   animation-iteration-count: infinite;
 }
-
-
 
 
 /* profil */
@@ -213,15 +192,14 @@ h3 {
   animation: rotate-90-cw 0.8s 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-
 .profilText {
   text-align: justify;
   font-size: 1.3rem;
   color: #3F3432;
 }
 
-.vertical-line {
-  border-left: 2px solid #6c3e37;
+/* .vertical-line {
+  border-left: 2px solid #844131cc;
   display: inline-block;
   height: 17rem;
   margin: 1rem;
@@ -229,27 +207,24 @@ h3 {
 
 .horizontal-line {
   width: 34rem;
-  border-bottom: 2px solid #6c3e37;
-}
+  border-bottom: 2px solid #844131cc;
+} */
 
 .subtitle {
-  border-top: 2px solid #6c3e37;
-  border-bottom: 2px solid #6c3e37;
+  border-top: 2px solid #844231;
+  border-bottom: 2px solid #844231;
   background-color: #3F3432;
 }
 
 .subtitleContact {
-  border-top: 1px solid #6c3e37;
-  border-bottom: 1px solid #6c3e37;
+  border-top: 1px solid #844231;
+  border-bottom: 1px solid #844231;
   background-color: #3F3432;
 }
 
 .profilText {
   animation: profilText 1s ease 0s 1 normal forwards;
 }
-
-
-
 
 
 /* Skills */
@@ -279,7 +254,7 @@ li>p {
 h4 {
   background-color: #c8944a;
   color: transparent;
-  text-shadow: 0px 3px 4px #6c3e37, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+  text-shadow: 0px 3px 4px #844231, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -288,7 +263,7 @@ h4 {
 .front,
 .back,
 .others {
-  background-color: #6c3e37;
+  background-color: #844231;
   border-radius: 1.5rem;
   border: 1px solid #c6872f;
   position: relative;
@@ -300,9 +275,6 @@ p {
   font-size: 1.2rem;
   color: #E5CEAD;
 }
-
-
-
 
 
 /* timeline */
@@ -350,7 +322,6 @@ h5 {
   border-right: 1rem solid #3F3432;
 }
 
-
 .contentRight {
   background-color: #3F3432;
   padding: 1rem;
@@ -371,7 +342,7 @@ h5 {
 .line {
   height: 43rem;
   width: 0.5rem;
-  background-color: #6d3f38;
+  background-color: #844231;
 }
 
 .arrow-up {
@@ -379,7 +350,7 @@ h5 {
   height: 0;
   border-right: 1rem solid transparent;
   border-left: 1rem solid transparent;
-  border-bottom: 1.5rem solid #6d3f38;
+  border-bottom: 1.5rem solid #844231;
 }
 
 .stageMars2023 {
@@ -396,7 +367,7 @@ h5 {
 }
 
 .bgButton {
-  background-color: #6d3f38;
+  background-color: #844231;
   border-radius: 1rem;
   border: 1px solid #c6872f;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -407,7 +378,7 @@ h5 {
   font-size: 1.7rem;
   background-color: #c8944a;
   color: transparent;
-  text-shadow: 0px 2px 3px #6d3f38, 0px 2px 3px #6d3f38, 3px 1px 2px #3F3432;
+  text-shadow: 0px 2px 3px #844231, 0px 2px 3px #844231, 3px 1px 2px #3F3432;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -424,7 +395,7 @@ h5 {
 .button:focus {
   background-color: #c8944a;
   color: transparent;
-  text-shadow: 0px 2px 3px #6d3f38, 0px 2px 3px #6d3f38, 3px 1px 2px #3F3432;
+  text-shadow: 0px 2px 3px #844231, 0px 2px 3px #844231, 3px 1px 2px #3F3432;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -433,15 +404,15 @@ h5 {
 .button:hover {
   background-color: #c8944a;
   color: transparent;
-  text-shadow: 0px 2px 3px #6d3f38, 0px 2px 3px #6d3f38, 3px 1px 2px #3F3432;
+  text-shadow: 0px 2px 3px #844231, 0px 2px 3px #844231, 3px 1px 2px #3F3432;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
 }
 
 
-
 /* hobbies */
+
 .contentHobbies {
   margin: 0;
   background-color: #e5ceadef;
@@ -450,8 +421,8 @@ h5 {
 }
 
 .hobby {
-  width: 18rem;
-  height: 18rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   perspective: 1000px;
 }
@@ -476,8 +447,8 @@ h5 {
 }
 
 .hobbyInner>img {
-  width: 18rem;
-  height: 18rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin: 0;
@@ -487,8 +458,8 @@ h5 {
 }
 
 .hobbyInner>.portugal {
-  width: 18rem;
-  height: 18rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin: 0;
@@ -497,8 +468,8 @@ h5 {
 }
 
 .hobbyInner>.rr {
-  width: 18rem;
-  height: 18rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin: 0;
@@ -508,8 +479,8 @@ h5 {
 }
 
 .hobbyInner>.OP {
-  width: 18rem;
-  height: 18rem;
+  width: 15em;
+  height: 15rem;
   border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin: 0;
@@ -518,11 +489,10 @@ h5 {
   background-color: #000000;
 }
 
-
 .hobbyText {
-  background-color: #6c3e37;
-  width: 18rem;
-  height: 18rem;
+  background-color: #844231;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border: 1px solid #c6872f;
@@ -532,40 +502,67 @@ h5 {
 }
 
 
-
 /* Portfolio */
+
+.contentPortfolio {
+  width: 80%;
+}
+
+.contentPortfolio>h5 {
+  font-size: 2rem;
+  text-shadow: none;
+  color: #844231;
+}
+
 .carousel-item>img {
-  width: 30rem;
+  width: 100%;
   height: 20rem;
   object-fit: fill;
 }
 
-.carousel-inner{
-  display: flex;
-  justify-content: center;
-}
-
-.carousel-indicators{
+.carousel-indicators {
   margin: -2rem;
 }
 
-.carousel-indicators [data-bs-target]{
-  background-color: #6c3e37;
-  
+.carousel-indicators [data-bs-target] {
+  background-color: #844231;
+}
+
+.carousel-control-next {
+  margin-right: -0.5rem;
+  width: 1.5rem;
+}
+
+.carousel-control-prev {
+  margin-left: -0.5rem;
+  width: 1.5rem;
 }
 
 .carousel-control-prev-icon {
   background-image: url("/public/assets/img/icons8-back-50.png");
+  height: 6rem;
+  width: 2rem;
 }
 
 .carousel-control-next-icon {
   background-image: url("/public/assets/img/icons8-next-50.png");
+  height: 6rem;
+  width: 2rem;
 }
+
+.carousel-inner {
+  background-color: #844231;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: 1px solid #c6872f;
+  overflow: hidden;
+}
+
 
 /* footer */
 
 footer {
-  background-color: #6d3f38;
+  background-color: #844231;
 }
 
 footer>p {
@@ -577,7 +574,6 @@ footer>p {
   -moz-background-clip: text;
   background-clip: text;
 }
-
 
 
 /* animation */
@@ -663,7 +659,6 @@ footer>p {
 }
 
 
-
 /* skills */
 
 .front {
@@ -706,14 +701,13 @@ footer>p {
 }
 
 
-
 /* responsive */
 
 @media (max-width:600px) {
   .horizontal-line {
     width: 5rem;
     height: 1px;
-    background-color: #6c3e37;
+    background-color: #844231;
   }
 
   /* timeline */
@@ -739,7 +733,6 @@ footer>p {
     border-right: 1rem solid #3F3432;
   }
 
-
   .contentRight {
     background-color: #3F3432;
     padding: 0.5rem;
@@ -757,9 +750,9 @@ footer>p {
   }
 
   .line {
-    height: 100rem;
+    height: 75rem;
     width: 0.5rem;
-    background-color: #6d3f38;
+    background-color: #844231;
   }
 
   .stageMars2023 {
@@ -779,9 +772,28 @@ footer>p {
     margin-bottom: 0.5rem;
   }
 
+  /* carousel */
+
+  .contentPortfolio {
+    width: 90%;
+  }
+
+  .carousel-item>img {
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+  }
+  .carousel-control-next {
+    margin-right: -1.5rem;
+  }
+
+  .carousel-control-prev {
+    margin-left: -1.5rem;
+  }
+
 }
 
-@media (max-width:850px) {
+@media (min-width:600px) {
   h1 {
     font-size: 3rem;
     text-align: center;
@@ -796,10 +808,10 @@ footer>p {
     font-size: 2rem;
   }
 
-  .horizontal-line {
+  /* .horizontal-line {
     width: 4rem;
-    border-bottom: 2px solid #6c3e37;
-  }
+    border-bottom: 2px solid #844231;
+  } */
 
   /* timeline */
 
@@ -844,7 +856,7 @@ footer>p {
   .line {
     height: 75rem;
     width: 0.5rem;
-    background-color: #6d3f38;
+    background-color: #844231;
   }
 
   .stageMars2023 {
@@ -865,9 +877,93 @@ footer>p {
                     margin-top: 0.5rem;
                     margin-bottom: 0.5rem;
                   } */
+  /* carousel */
+
+  .contentPortfolio {
+    width: 80%;
+  }
+
+  .carousel-item>img {
+    width: 100%;
+    height: 25rem;
+    object-fit: fill;
+  }
+
+  .carousel-control-next {
+    margin-right: -3rem;
+  }
+
+  .carousel-control-prev {
+    margin-left: -3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .line {
+    height: 55rem;
+  }
 
 }
 
+@media(max-width:850px) {
+
+  .nav-link {
+    font-family: 'Della Respira';
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3F3432, 3px 1px 2px #3F3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
+
+  .nav-link:active,
+  .nav-link:focus {
+    font-size: 1.5rem;
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    transition: 0.3s;
+    transform: translateY(6px);
+  }
+
+  .nav-link:hover {
+    font-size: 1.5rem;
+    background-color: #c6872f;
+    color: transparent;
+    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    transition: 0.3s;
+  }
+
+}
+
+@media (min-width:850px) {
+  .contentPortfolio {
+    width: 85%;
+  }
+
+  .carousel-item>img {
+    width: 100%;
+    height: 30rem;
+    object-fit: fill;
+  }
+
+  .carousel-control-next {
+    margin-right: -3rem;
+  }
+
+  .carousel-control-prev {
+    margin-left: -3rem;
+  }
+}
 
 @media (min-width:1250px) {
   .name {
@@ -921,7 +1017,7 @@ footer>p {
   .line {
     height: 40rem;
     width: 0.5rem;
-    background-color: #6d3f38;
+    background-color: #844231;
   }
 
   .stageMars2023 {
@@ -936,4 +1032,24 @@ footer>p {
   .laManu {
     margin-top: 2rem;
   }
+
+  .contentPortfolio {
+    width: 85%;
+  }
+
+  .carousel-item>img {
+    width: 100%;
+    height: 40rem;
+    object-fit: fill;
+  }
+
+  .carousel-control-next {
+    margin-right: -2.5rem;
+  }
+
+  .carousel-control-prev {
+    margin-left: -2.5rem;
+  }
+
+
 }
