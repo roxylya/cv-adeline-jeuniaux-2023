@@ -7,15 +7,17 @@ body {
 }
 
 .up {
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+  width: 1rem;
   border-radius: 50%;
+  background-color: #e5cead81;
   border: 1px solid #c8944a;
   position: sticky;
   bottom: 0;
   right: 0;
   z-index: 3;
   /* margin: 0.5rem; */
-  margin-left: 50%;
+  margin-left: 90%;
 }
 
 /* scrollbar */
@@ -211,18 +213,6 @@ h3 {
   color: #3F3432;
 }
 
-/* .vertical-line {
-  border-left: 2px solid #844131cc;
-  display: inline-block;
-  height: 17rem;
-  margin: 1rem;
-}
-
-.horizontal-line {
-  width: 34rem;
-  border-bottom: 2px solid #844131cc;
-} */
-
 .subtitle {
   border-top: 2px solid #844231;
   border-bottom: 2px solid #844231;
@@ -292,7 +282,7 @@ p {
 
 /* timeline */
 
-h4 {
+.contentLeft>h4, .contentRight>h4 {
   font-size: 1.5rem;
   background-color: #c8944a;
   color: transparent;
@@ -353,7 +343,7 @@ h5 {
 }
 
 .line {
-  height: 43rem;
+  height: 73rem;
   width: 0.5rem;
   background-color: #844231;
 }
@@ -517,7 +507,7 @@ h5 {
 
 /* Portfolio */
 
-.contentPortfolio {
+ .contentPortfolio {
   width: 80%;
 }
 
@@ -526,7 +516,7 @@ h5 {
   text-shadow: none;
   color: #844231;
 }
-
+/*
 .carousel-item>img {
   width: 100%;
   height: 20rem;
@@ -570,7 +560,7 @@ h5 {
   border: 1px solid #c6872f;
   overflow: hidden;
 }
-
+ */
 
 /* footer */
 
@@ -717,27 +707,13 @@ footer>p {
 
 /* responsive */
 
-
-
-@media (max-width:600px) {
-
-  h1 {
-    font-size: 3rem;
-    text-align: center;
+@media (min-width:1250px) {
+  .name {
+    width: 60%;
   }
 
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .junior {
-    font-size: 2rem;
-  }
-  .horizontal-line {
-    width: 5rem;
-    height: 1px;
-    background-color: #844231;
+  .job {
+    width: 50%;
   }
 
   /* timeline */
@@ -749,9 +725,9 @@ footer>p {
 
   .contentLeft {
     background-color: #3F3432;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 1rem;
-    width: 18rem;
+    width: 35rem;
     border: 1px solid #c6872f;
   }
 
@@ -765,10 +741,10 @@ footer>p {
 
   .contentRight {
     background-color: #3F3432;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 1rem;
     border: 1px solid #c6872f;
-    width: 18rem;
+    width: 35rem;
   }
 
   .arrow-right {
@@ -779,47 +755,147 @@ footer>p {
     border-left: 1rem solid #3F3432;
   }
 
-  .line {
-    height: 75rem;
-    width: 0.5rem;
-    background-color: #844231;
-  }
-
   .stageMars2023 {
-    margin: 0;
+
+    margin-bottom: 2rem;
   }
 
   .coriolis2022 {
-    margin: 0;
+    margin-bottom: 1rem;
   }
 
   .laManu {
-    margin: 0;
+    margin-top: 2rem;
   }
 
-  .contentArrowRight {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+ /* .contentPortfolio {
+    width: 85%;
   }
 
-  /* carousel */
-
-  .contentPortfolio {
-    width: 90%;
-  }
-
-  .carousel-item>img {
+   .carousel-item>img {
     width: 100%;
-    height: 20rem;
+    height: 40rem;
     object-fit: fill;
   }
 
   .carousel-control-next {
-    margin-right: -1.5rem;
+    margin-right: -2.5rem;
   }
 
   .carousel-control-prev {
-    margin-left: -1.5rem;
+    margin-left: -2.5rem;
+  } */
+
+  .up {
+  padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #e5cead81;
+  border: 1px solid #c8944a;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  /* margin: 0.5rem; */
+  margin-left: 93%;
+  }
+
+}
+
+@media (min-width:850px) {
+  /* .contentPortfolio {
+    width: 85%;
+  }
+
+  .carousel-item>img {
+    width: 100%;
+    height: 30rem;
+    object-fit: fill;
+  }
+
+  .carousel-control-next {
+    margin-right: -3rem;
+  }
+
+  .carousel-control-prev {
+    margin-left: -3rem;
+  } */
+}
+
+@media (max-width:900px) {
+  .up {
+    padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #e5cead81;
+    border: 1px solid #c8944a;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    /* margin: 0.5rem; */
+    margin-left: 90%;
+  }
+}
+
+@media(max-width:850px) {
+
+  .nav-link {
+    font-family: 'Della Respira';
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3F3432, 3px 1px 2px #3F3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
+
+  .nav-link:active,
+  .nav-link:focus {
+    font-size: 1.5rem;
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    transition: 0.3s;
+    transform: translateY(6px);
+  }
+
+  .nav-link:hover {
+    font-size: 1.5rem;
+    background-color: #c6872f;
+    color: transparent;
+    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    transition: 0.3s;
+  }
+
+  .up {
+    padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #e5cead81;
+    border: 1px solid #c8944a;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    /* margin: 0.5rem; */
+    margin-left: 85%;
+  }
+}
+
+@media (min-width:768px) {
+  .line {
+    height: 50rem;
+    width: 0.5rem;
+    background-color: #844231;
   }
 
 }
@@ -884,12 +960,6 @@ footer>p {
     border-left: 1rem solid #3F3432;
   }
 
-  .line {
-    height: 75rem;
-    width: 0.5rem;
-    background-color: #844231;
-  }
-
   .stageMars2023 {
 
     margin-bottom: 1rem;
@@ -910,7 +980,7 @@ footer>p {
                   } */
   /* carousel */
 
-  .contentPortfolio {
+  /* .contentPortfolio {
     width: 80%;
   }
 
@@ -926,96 +996,28 @@ footer>p {
 
   .carousel-control-prev {
     margin-left: -3rem;
-  }
+  } */
 }
 
-@media (min-width:768px) {
-  .line {
-    height: 55rem;
+@media (max-width:600px) {
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
   }
 
-}
-
-@media(max-width:850px) {
-
-  .nav-link {
-    font-family: 'Della Respira';
-    font-size: 1.2rem;
-    padding: 0 1rem 0 1rem;
-    background-color: #c8944a;
-    color: transparent;
-    text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3F3432, 3px 1px 2px #3F3432;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+  h2 {
+    font-size: 2rem;
+    text-align: center;
   }
 
-  .nav-link:active,
-  .nav-link:focus {
-    font-size: 1.5rem;
-    background-color: #c8944a;
-    color: transparent;
-    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    transition: 0.3s;
-    transform: translateY(6px);
+  .junior {
+    font-size: 2rem;
   }
-
-  .nav-link:hover {
-    font-size: 1.5rem;
-    background-color: #c6872f;
-    color: transparent;
-    text-shadow: 0px 3px 4px #3f3432, 0px 3px 4px #3f3432, 4px 2px 3px #3f3432;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    transition: 0.3s;
-  }
-}
-
-@media (max-width:900px) {
-  .up {
-    padding: 0.5rem 1rem 1rem 1rem;
-    border-radius: 50%;
-    border: 1px solid #c8944a;
-    position: sticky;
-    bottom: 0;
-    right: 0;
-    z-index: 3;
-    /* margin: 0.5rem; */
-    margin-left: 75%;
-  }
-}
-
-@media (min-width:850px) {
-  .contentPortfolio {
-    width: 85%;
-  }
-
-  .carousel-item>img {
-    width: 100%;
-    height: 30rem;
-    object-fit: fill;
-  }
-
-  .carousel-control-next {
-    margin-right: -3rem;
-  }
-
-  .carousel-control-prev {
-    margin-left: -3rem;
-  }
-}
-
-@media (min-width:1250px) {
-  .name {
-    width: 60%;
-  }
-
-  .job {
-    width: 50%;
+  .horizontal-line {
+    width: 5rem;
+    height: 1px;
+    background-color: #844231;
   }
 
   /* timeline */
@@ -1027,9 +1029,9 @@ footer>p {
 
   .contentLeft {
     background-color: #3F3432;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
-    width: 35rem;
+    width: 18rem;
     border: 1px solid #c6872f;
   }
 
@@ -1041,13 +1043,12 @@ footer>p {
     border-right: 1rem solid #3F3432;
   }
 
-
   .contentRight {
     background-color: #3F3432;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     border: 1px solid #c6872f;
-    width: 35rem;
+    width: 18rem;
   }
 
   .arrow-right {
@@ -1058,54 +1059,62 @@ footer>p {
     border-left: 1rem solid #3F3432;
   }
 
-  .line {
-    height: 40rem;
-    width: 0.5rem;
-    background-color: #844231;
-  }
-
   .stageMars2023 {
-
-    margin-bottom: 2rem;
+    margin: 0;
   }
 
   .coriolis2022 {
-    margin-bottom: 1rem;
+    margin: 0;
   }
 
   .laManu {
-    margin-top: 2rem;
+    margin: 0;
   }
 
-  .contentPortfolio {
-    width: 85%;
-  }
-
-  .carousel-item>img {
-    width: 100%;
-    height: 40rem;
-    object-fit: fill;
-  }
-
-  .carousel-control-next {
-    margin-right: -2.5rem;
-  }
-
-  .carousel-control-prev {
-    margin-left: -2.5rem;
+  .contentArrowRight {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .up {
-    
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+    width: 1rem;
     border-radius: 50%;
+    background-color: #e5cead81;
     border: 1px solid #c8944a;
     position: sticky;
     bottom: 0;
     right: 0;
     z-index: 3;
     /* margin: 0.5rem; */
-    margin-left: 93%;
+    margin-left: 75%;
+  }
+  /* carousel */
+
+  /* .contentPortfolio {
+    width: 90%;
   }
 
+  .carousel-item>img {
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+  }
+
+  .carousel-control-next {
+    margin-right: -1.5rem;
+  }
+
+  .carousel-control-prev {
+    margin-left: -1.5rem;
+  } */
+
 }
+
+
+
+
+
+
+
+
