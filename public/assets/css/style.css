@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Della Respira', serif;
-  background-color: #E5CEAD;
+  background-color: #3F3432;
 }
 
 .up {
@@ -622,7 +622,7 @@ h5 {
 }
 
 .cardContact>.bgLine>h5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: #c8944a;
   color: transparent;
   text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
@@ -643,7 +643,7 @@ h5 {
 }
 
 .cardContact>ul>li>a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: #E5CEAD ;
   color: transparent;
   text-shadow: 0px 3px 3px #3f3432bf, 0px 3px 3px #3f3432a2, 4px 2px 3px #3f343287;
@@ -1239,5 +1239,58 @@ footer>p {
   .carousel-control-prev {
     margin-left: -1.5rem;
   } */
+
+
+  /* contact */
+
+.cardContact {
+  background-color: #3f3432;
+  padding: 1rem 1rem 0rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #c6872f;
+}
+
+.cardContact>h4 {
+  font-size: 1.6rem;
+  background-color: #c8944a;
+  color: transparent;
+  text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
+
+.cardContact>.bgLine>h5 {
+  font-size: 1.2rem;
+  background-color: #c8944a;
+  color: transparent;
+  text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.cardContact>ul>li {
+  list-style: none outside;
+  margin-left: -1.5rem;
+  padding: 0.3rem;
+}
+
+.cardContact>ul>li>img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.cardContact>ul>li>a {
+  font-size: 1rem;
+  background-color: #E5CEAD ;
+  color: transparent;
+  text-shadow: 0px 3px 3px #3f3432bf, 0px 3px 3px #3f3432a2, 4px 2px 3px #3f343287;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-decoration: none;
+}
 
 }
