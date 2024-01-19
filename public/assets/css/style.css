@@ -579,13 +579,13 @@ h5 {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("/public/assets/img/icons8-back-50.png");
+  background-image: url("./public/assets/img/icons8-back-50.png");
   height: 6rem;
   width: 2rem;
 }
 
 .carousel-control-next-icon {
-  background-image: url("/public/assets/img/icons8-next-50.png");
+  background-image: url("./public/assets/img/icons8-next-50.png");
   height: 6rem;
   width: 2rem;
 }
