@@ -370,7 +370,7 @@ h5 {
 }
 
 .line {
-  height: 90rem;
+  height: 95rem;
   width: 0.5rem;
   background-color: #844231;
 }
@@ -383,7 +383,7 @@ h5 {
   border-bottom: 1.5rem solid #844231;
 }
 
-.stageMars2023 {
+/* .stageMars2023 {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -394,7 +394,7 @@ h5 {
 
 .laManu {
   margin-top: 3rem;
-}
+} */
 
 .bgButton {
   background-color: #844231;
@@ -853,7 +853,7 @@ footer>p {
     border-left: 1rem solid #3F3432;
   }
 
-  .stageMars2023 {
+  /* .stageMars2023 {
 
     margin-bottom: 2rem;
   }
@@ -864,7 +864,7 @@ footer>p {
 
   .laManu {
     margin-top: 2rem;
-  }
+  } */
 
   /* .contentPortfolio {
     width: 85%;
@@ -1082,7 +1082,7 @@ footer>p {
     border-left: 1rem solid #3F3432;
   }
 
-  .stageMars2023 {
+  /* .stageMars2023 {
 
     margin-bottom: 1rem;
   }
@@ -1094,7 +1094,7 @@ footer>p {
   .laManu {
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
+  } */
 
   /* .contentArrowRight {
                     margin-top: 0.5rem;
@@ -1182,7 +1182,7 @@ footer>p {
     border-left: 1rem solid #3F3432;
   }
 
-  .stageMars2023 {
+  /* .stageMars2023 {
     margin: 0;
   }
 
@@ -1192,7 +1192,7 @@ footer>p {
 
   .laManu {
     margin: 0;
-  }
+  } */
 
   .contentArrowRight {
     margin-top: 0.5rem;
