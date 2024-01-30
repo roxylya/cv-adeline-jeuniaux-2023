@@ -218,7 +218,7 @@ h3 {
 .contentProfil>p {
   text-align: justify;
   font-size: 1.3rem;
-  background-color: #3F3432 ;
+  background-color: #3F3432;
   color: transparent;
   text-shadow: 2px 3px 3px #e5ceada8, 1px 3px 3px #E5CEAD, 4px 2px 3px #E5CEAD;
   -webkit-background-clip: text;
@@ -259,7 +259,7 @@ li {
 li>p {
   padding-right: 1.3rem;
   font-size: 1.2rem;
-  background-color: #E5CEAD ;
+  background-color: #E5CEAD;
   color: transparent;
   text-shadow: 0px 3px 3px #844231, 0px 3px 3px #844231, 4px 2px 3px #3f343287;
   -webkit-background-clip: text;
@@ -293,10 +293,11 @@ h4 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.contentLeft>p, .contentRight>p {
+.contentLeft>p,
+.contentRight>p {
   text-align: justify;
   font-size: 1.2rem;
-  background-color: #E5CEAD ;
+  background-color: #E5CEAD;
   color: transparent;
   text-shadow: 0px 3px 3px #3f3432bf, 0px 3px 3px #3f3432a2, 4px 2px 3px #3f343287;
   -webkit-background-clip: text;
@@ -369,7 +370,7 @@ h5 {
 }
 
 .line {
-  height: 73rem;
+  height: 90rem;
   width: 0.5rem;
   background-color: #844231;
 }
@@ -530,9 +531,9 @@ h5 {
   transform: rotateY(180deg);
 }
 
-.hobbyText>p{
+.hobbyText>p {
   font-size: 1.3rem;
-  background-color: #3F3432 ;
+  background-color: #3F3432;
   color: transparent;
   text-shadow: 2px 3px 3px #84423169, 1px 3px 3px #8442318f, 4px 2px 3px #844231b1;
   -webkit-background-clip: text;
@@ -644,7 +645,7 @@ h5 {
 
 .cardContact>ul>li>a {
   font-size: 1.3rem;
-  background-color: #E5CEAD ;
+  background-color: #E5CEAD;
   color: transparent;
   text-shadow: 0px 3px 3px #3f3432bf, 0px 3px 3px #3f3432a2, 4px 2px 3px #3f343287;
   -webkit-background-clip: text;
@@ -653,7 +654,7 @@ h5 {
   text-decoration: none;
 }
 
-.bgLine{
+.bgLine {
   background-color: #844231;
   padding: 0.5rem;
   margin: 0;
@@ -1243,54 +1244,54 @@ footer>p {
 
   /* contact */
 
-.cardContact {
-  background-color: #3f3432;
-  padding: 1rem 1rem 0rem 1rem;
-  border-radius: 1rem;
-  border: 1px solid #c6872f;
-}
+  .cardContact {
+    background-color: #3f3432;
+    padding: 1rem 1rem 0rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #c6872f;
+  }
 
-.cardContact>h4 {
-  font-size: 1.6rem;
-  background-color: #c8944a;
-  color: transparent;
-  text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  text-align: center;
-}
+  .cardContact>h4 {
+    font-size: 1.6rem;
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-align: center;
+  }
 
-.cardContact>.bgLine>h5 {
-  font-size: 1.2rem;
-  background-color: #c8944a;
-  color: transparent;
-  text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-}
+  .cardContact>.bgLine>h5 {
+    font-size: 1.2rem;
+    background-color: #c8944a;
+    color: transparent;
+    text-shadow: 0px 2px 3px #3f3432, 0px 2px 3px #3f34326b, 3px 1px 2px #3f343225;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
 
-.cardContact>ul>li {
-  list-style: none outside;
-  margin-left: -1.5rem;
-  padding: 0.3rem;
-}
+  .cardContact>ul>li {
+    list-style: none outside;
+    margin-left: -1.5rem;
+    padding: 0.3rem;
+  }
 
-.cardContact>ul>li>img {
-  width: 2rem;
-  height: 2rem;
-}
+  .cardContact>ul>li>img {
+    width: 2rem;
+    height: 2rem;
+  }
 
-.cardContact>ul>li>a {
-  font-size: 1rem;
-  background-color: #E5CEAD ;
-  color: transparent;
-  text-shadow: 0px 3px 3px #3f3432bf, 0px 3px 3px #3f3432a2, 4px 2px 3px #3f343287;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  text-decoration: none;
-}
+  .cardContact>ul>li>a {
+    font-size: 1rem;
+    background-color: #E5CEAD;
+    color: transparent;
+    text-shadow: 0px 3px 3px #3f3432bf, 0px 3px 3px #3f3432a2, 4px 2px 3px #3f343287;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+  }
 
 }
